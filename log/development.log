@@ -47458,3 +47458,4 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 108ms (Views: 105.2ms | ActiveRecord: 0.9ms)
 
 
+**Airbrake: {"id"=>"0005495b-4656-9378-3446-2bd910d386d9", "url"=>"https://airbrake.io/locate/0005495b-4656-9378-3446-2bd910d386d9"}

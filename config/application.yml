@@ -23,8 +23,9 @@
 
    SEND_CLOUD_USER_KEY: "m2ZItDdrdEh3vDn4"  # 你的 API_KEY 
 
+   PROJECT_ID:  "138310"
 
-   
+   PROJECT_KEY:   "7f66a64309b1004c5f76b780d5cdedc0"
 
  development:
    qiniu_access_key: "GiRdRlnFLewdZR1zMQKTldIvoNx5do9927ok7BUT"
@@ -38,3 +39,7 @@
    SEND_CLOUD_USER_NAME: "zhouqizhou_test_eTYVfF"  # 你的 API_USER
 
    SEND_CLOUD_USER_KEY: "m2ZItDdrdEh3vDn4"  # 你的 API_KEY 
+
+   PROJECT_ID:  "138310"
+
+   PROJECT_KEY:   "7f66a64309b1004c5f76b780d5cdedc0"
