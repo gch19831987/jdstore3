@@ -1,14 +1,134 @@
-<div class="row">
+		<!---->	
+<div class="product-grids">
+	<div class="container">
+      <%  $i = 0 %>
   <% @products.each do |product| %>
-    <div class="col-xs-6 col-md-3">
-      <%= link_to product_path(product) do %>
-        <% if product.image.present? %>
-          <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-        <% else %>
-          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-        <% end %>
+      <%  $i = $i+1 %>
+      
+     <%  if $i == 1  %>
+	<div class="product-top">
       <% end %>
-      <%= product.title %> ￥ <%= product.price %>
-    </div>
-  <% end %>
+	
+     <%  if $i%3 == 0  %>
+	<div class="product-top">
+      <% end %>
+	<div class="col-md-4 grid-product-in">	
+		<div class=" product-grid">	
+		 <%= link_to product_path(product) do %>
+			<% if product.image.present? %>
+			  <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+			<% else %>
+			  <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+			<% end %>
+	      <% end %>
+
+
+			<div class="shoe-in">
+			<h6>
+		              <%= link_to product_path(product) do %>
+					$<%= product.title %>
+			      <% end %>
+
+				</h6>
+				<label><%= product.price %></label>
+		              <%= link_to product_path(product) do %>
+					<%= product.description%>
+			      <% end %>
+			</div>
+			
+			<b class="plus-on">+</b>
+		</div>	
+	</div>
+     <%  if $i%3 == 0 %>
+	<div class="clearfix"> </div>
+	</div>	
+      <% end %>
+<% end %>
+<!--
+	<div class="product-top">
+		<div class="col-md-4 grid-product-in">	
+		<div class=" product-grid">	
+			<a href="single.html"><img class="img-responsive " src="https://s3-ap-northeast-1.amazonaws.com/fullstrack/pr3.png" alt=""></a>		
+			<div class="shoe-in">
+				<h6><a href="single.html">Lorem Ipsum is simply dummy </a></h6>
+				<label>$67.99</label>
+				<a href="single.html" class="store">FIND A STORE</a>
+			</div>
+			
+			<b class="plus-on">+</b>
+		</div>	
+		</div>
+	<div class="col-md-4 grid-product-in">	
+		<div class=" product-grid">	
+			<a href="single.html"><img class="img-responsive " src="https://s3-ap-northeast-1.amazonaws.com/fullstrack/pr4.png" alt=""></a>
+			<div class="shoe-in">
+				<h6><a href="single.html">Lorem Ipsum is simply dummy </a></h6>
+				<label>$67.99</label>
+				<a href="single.html" class="store">FIND A STORE</a>
+			</div>
+			
+			<b class="plus-on">+</b>
+		</div>
+		</div>
+		<div class="col-md-4 grid-product-in">	
+		<div class=" product-grid">	
+			<a href="single.html"><img class="img-responsive " src="https://s3-ap-northeast-1.amazonaws.com/fullstrack/sh.png" alt=""></a>
+			<div class="shoe-in">
+				<h6><a href="single.html">Lorem Ipsum is simply dummy </a></h6>
+				<label>$67.99</label>
+				<a href="single.html" class="store">FIND A STORE</a>
+			</div>
+		
+			<b class="plus-on">+</b>
+		</div>
+		</div>
+	<div class="clearfix"> </div>
+	</div>
+	<div class="product-top">
+		<div class="col-md-4 grid-product-in">	
+		<div class=" product-grid">	
+			<a href="single.html"><img class="img-responsive " src="https://s3-ap-northeast-1.amazonaws.com/fullstrack/sh2.png" alt=""></a>		
+			<div class="shoe-in">
+				<h6><a href="single.html">Lorem Ipsum is simply dummy </a></h6>
+				<label>$67.99</label>
+				<a href="single.html" class="store">FIND A STORE</a>
+			</div>
+			
+			<b class="plus-on">+</b>
+		</div>	
+		</div>
+		<div class="col-md-4 grid-product-in">	
+		<div class=" product-grid">	
+			<a href="single.html"><img class="img-responsive " src="https://s3-ap-northeast-1.amazonaws.com/fullstrack/pr1.png" alt=""></a>
+			<div class="shoe-in">
+				<h6><a href="single.html">Lorem Ipsum is simply dummy </a></h6>
+				<label>$67.99</label>
+				<a href="single.html" class="store">FIND A STORE</a>
+			</div>
+		
+			<b class="plus-on">+</b>
+		</div>
+		</div>
+		<div class="col-md-4 grid-product-in">	
+		<div class=" product-grid">	
+			<a href="single.html"><img class="img-responsive " src="https://s3-ap-northeast-1.amazonaws.com/fullstrack/pr.png" alt=""></a>
+			<div class="shoe-in">
+				<h6><a href="single.html">Lorem Ipsum is simply dummy </a></h6>
+				<label>$67.99</label>
+				<a href="single.html" class="store">FIND A STORE</a>
+			</div>
+			
+			<b class="plus-on">+</b>
+		</div>
+		</div>
+	<div class="clearfix"> </div>
+	</div>
+-->
+
+
+
+	</div>
+
 </div>
+	<!---->
+
